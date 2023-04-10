@@ -1,3 +1,7 @@
+# Just play it
+
+If you just want to play the game it's available at [https://billythekid.github.io/react-pairs/](https://billythekid.github.io/react-pairs/) or you can clone the repo and run it locally.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

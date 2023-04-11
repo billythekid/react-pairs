@@ -23,7 +23,7 @@ function App() {
     setAttemptCards((attemptCards) => new Set([...attemptCards, card]));
     if (attemptCards.size === 1) {
       const [firstCard, secondCard] = [...attemptCards, card];
-      if (firstCard instanceof PlayingCard && firstCard.equals(secondCard)) {
+      if (firstCard instanceof PlayingCard && firstCard.isEqualTo(secondCard)) {
         setMatchedCards(new Set([...matchedCards, firstCard, secondCard]));
         setMatches(matches + 1);
       }

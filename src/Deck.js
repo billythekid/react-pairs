@@ -138,22 +138,18 @@ export class PlayingCard  {
     return new PlayingCard(this.suit, this.value, this.id + 1);
   }
 
-  /**
-   * Checks if the card is equal to another card.
-   * @param {Card} card - The card to compare.
-   * @returns {boolean} True if the cards are equal; otherwise, false.
-   * @example
-   * const card1 = new Card("Hearts", "Ace");
-   * const card2 = new Card("Hearts", "Ace");
-   * console.log(card1.equals(card2)); // true
-   * console.log(card1 === card2); // false
-   * 
-  */
-  equals(card) {
-    if (!(card instanceof PlayingCard)) {
-      return false;
-    }
-    return this.suit === card.getSuit() && this.value === card.getValue();
+/**
+ * Checks if the card is equal to another card.
+ * @param {Card} otherCard - The card to compare.
+ * @returns {boolean} True if the cards have the same suit and value; otherwise, false.
+ */
+isEqualTo(otherCard) {
+  if (!(otherCard instanceof PlayingCard)) {
+    return false;
   }
+  const haveSameSuit = this.suit === otherCard.getSuit();
+  const haveSameValue = this.value === otherCard.getValue();
+  return haveSameSuit && haveSameValue;
+}
 
 }

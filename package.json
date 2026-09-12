@@ -19,7 +19,7 @@
     "@babel/core": "^7.29.6",
     "@tootallnate/once": "^2.0.1",
     "http-proxy-middleware": "^2.0.10",
-    "js-yaml": "^4.3.1",
+    "js-yaml": "^4.3.2",
     "postcss": "^8.5.23",
     "serialize-javascript": "^7.0.5",
     "svgo": "^2.8.3",
